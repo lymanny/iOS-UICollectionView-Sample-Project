@@ -1,0 +1,21 @@
+/* 
+  QBImagePicker.strings
+  QBImagePicker
+
+  Created by Katsuma Tanaka on 2015/04/03.
+  Copyright (c) 2015 Katsuma Tanaka. All rights reserved.
+*/
+
+"albums.title" = "시잔";
+
+"assets.footer.photo" = "%ld 시잔";
+"assets.footer.photos" = "%ld 시잔";
+"assets.footer.video" = "%ld 비디오";
+"assets.footer.videos" = "%ld 비디오";
+"assets.footer.photo-and-video" = "%ld 시잔, %ld 비디오";
+"assets.footer.photos-and-video" = "%ld 시잔, %ld 비디오";
+"assets.footer.photo-and-videos" = "%ld 시잔, %ld 비디오";
+"assets.footer.photos-and-videos" = "%ld 시잔, %ld 비디오";
+
+"assets.toolbar.item-selected" = "%ld개 항목 선택";
+"assets.toolbar.items-selected" = "%ld개 항목 선택";
