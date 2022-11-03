@@ -8,7 +8,8 @@
 import Foundation
 
 struct BookData {
-    var image : UIImage?
-    var title : String?
-    var desc  : String?
+    var image     : UIImage?
+    var title     : String?
+    var desc      : String?
+    var isAnimate : Bool = true
 }

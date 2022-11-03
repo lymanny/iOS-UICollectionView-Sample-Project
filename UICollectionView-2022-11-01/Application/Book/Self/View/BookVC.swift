@@ -222,14 +222,20 @@ extension BookVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     // Tells the delegate that the specified cell is about to be displayed in the collection view.
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-
-        cell.alpha = 0
-        cell.layer.transform = CATransform3DMakeScale(0.5, 0.5, 0.5)
-        UIView.animate(withDuration: 1.0, animations: { () -> Void in
-            cell.alpha = 1
-            cell.layer.transform = CATransform3DScale(CATransform3DIdentity, 1, 1, 1)
+        
+        if  bookVM.bookData[indexPath.item].isAnimate {
             
-        })
+            cell.alpha = 0
+            cell.layer.transform = CATransform3DMakeScale(0.5, 0.5, 0.5)
+            UIView.animate(withDuration: 1.0, animations: { () -> Void in
+                cell.alpha = 1
+                cell.layer.transform = CATransform3DScale(CATransform3DIdentity, 1, 1, 1)
+                
+            })
+            
+        bookVM.bookData[indexPath.item].isAnimate = false
+            
+        }
     }
     
     // Re-order
