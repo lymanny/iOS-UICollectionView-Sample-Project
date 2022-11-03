@@ -17,7 +17,6 @@ class BookVC: UIViewController {
     var bookVM               = BookVM()
     var margin               : CGFloat = 10
     var isCanMoveCell        = false
-    var isShowAnimateOnce    = false
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
