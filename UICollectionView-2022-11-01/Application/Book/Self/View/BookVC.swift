@@ -223,7 +223,7 @@ extension BookVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
         if  bookVM.bookData[indexPath.item].isAnimate {
-            
+            // animate only once
             cell.alpha = 0
             cell.layer.transform = CATransform3DMakeScale(0.5, 0.5, 0.5)
             UIView.animate(withDuration: 1.0, animations: { () -> Void in
